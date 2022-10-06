@@ -111,10 +111,18 @@
             font-weight: bold;
 
         }
+        .ad_list {
+        	width: 100%;
+    		height: 350px;
+   			background: url(https://i.ibb.co/tBJGPD9/xbox.png), no-repeat, center, center; 
+			background-size: cover;
+			line-height: 1.5rem;
+        }
 
         .ad_list .content {
             width:40%;
             padding: 50px 0 0 30px;
+            
         }
         .ad_list p {
             margin: 10px 0 20px;
@@ -179,9 +187,9 @@
 
         </div>
         <div class="header">
-            <h2> title </h2>
-            <p> content </p>
-            <a href=""class="btn"> a link</a>
+            <h2> Surface Deals </h2>
+            <p> Select Surfaces are on sale now - save while supplies last </p>
+            <a href=""class="btn"> Shop Now</a>
 
         </div>
         
@@ -213,9 +221,9 @@
         </div>
         <div class="ad_list">
             <div class="content">
-                <h2> title </h2>
-                <p> content </p>
-                <a href="" class="btn"> a link</a>
+                <h2> Xbox Game Pass Ultimate </h2>
+                <p> Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game. </p>
+                <a href="" class="btn"> Join Now</a>
 
             </div>
 
@@ -248,10 +256,9 @@
         </div>
         <div class="banner_card">
             <div class="content">
-
-                <h2>어쩌구 컨텐트 저쩌구</h2>
-                <p></p>
-                <a href="#" class="btn col"> a link</a>
+                <h2>Commiting To Carbon Negative</h2>
+				<p>Microsoft will be carbon negative by 2030 and by 2050 we will remove all carbon the company has emitted since it was founded in 1975</p>
+                <a href="#" class="btn col"> Learn More</a>
             </div>
         </div>
         <div class="sns">
