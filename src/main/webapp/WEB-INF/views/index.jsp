@@ -1,5 +1,7 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -117,6 +119,7 @@
    			background: url(https://i.ibb.co/tBJGPD9/xbox.png), no-repeat, center, center; 
 			background-size: cover;
 			line-height: 1.5rem;
+			margin-bottom: 20px;
         }
 
         .ad_list .content {
@@ -133,6 +136,10 @@
             height: 350px;
             background: url(https://i.ibb.co/72cgtsz/carbon.jpg) no-repeat center center/cover;
         }
+        
+        .banner_card .content {
+        	color : white;
+        }
 
         .banner_card .content p {
             margin: 10px 0 20px;
@@ -144,7 +151,7 @@
         }
         
 
-        .col {
+        .banner_card .content .col {
             background: #f4f4f4;
             color: #333;
 
@@ -194,65 +201,40 @@
         </div>
         
         <div class="main_card">
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href="" > a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
+        	<c:forEach var="vo" items="${list}">
+				<c:if test="${vo.category eq 1}">
+				<div>
+               		<img src="${vo.img}">
+               		 <h3> ${vo.head} </h3>
+                	<p> ${vo.content}</p>
+                	<a class="" href="#">${vo.link}</a>
+            	</div>
+				</c:if>
+			</c:forEach>
         </div>
         <div class="ad_list">
             <div class="content">
                 <h2> Xbox Game Pass Ultimate </h2>
                 <p> Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality console and PC games. Play together with friends and discover your next favorite game. </p>
-                <a href="" class="btn"> Join Now</a>
+                <a href="#" class="btn"> Join Now</a>
 
             </div>
 
         </div>
         <div class="main_card">
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href="" > a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3> title 들어갈곳 </h3>
-                <p> 컨텐트 들어갈곳 </p>
-                <a href=""> a링크 들어갈곳</a>
-            </div>
+        
+        <c:forEach var="vo" items="${list}">
+			<c:if test="${vo.category eq 2}">
+			<div class="cate">
+               		<img src="${vo.img}">
+               		 <h3> ${vo.head} </h3>
+                	<p> ${vo.content}</p>
+                	<a class="" href="#">${vo.link}</a>
+
+			</div>
+			</c:if>
+		</c:forEach>
+	
         </div>
         <div class="banner_card">
             <div class="content">
