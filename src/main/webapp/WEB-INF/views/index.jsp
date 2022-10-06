@@ -14,6 +14,7 @@ pageEncoding="UTF-8"%>
         padding: 0;
         margin: 0;
 
+
         /* border: 1px solid black; */
     }
 
@@ -39,6 +40,10 @@ pageEncoding="UTF-8"%>
         cursor: pointer;
     }
     
+    .btn:hover {
+        opacity: 0.9;
+    }
+    
     .menu {
         display: flex;
         align-items: center;
@@ -56,7 +61,7 @@ pageEncoding="UTF-8"%>
        
     }
     .main-nav > img {
-        width: 120px;
+        width: 110px;
     }
     .nav {
         margin: 0;
@@ -75,6 +80,10 @@ pageEncoding="UTF-8"%>
         text-decoration: none;
         color: black;
         font-size: 13px;
+    }
+    
+    .nav > li > a:hover {
+        border-bottom: 2px solid #262626;
     }
 
 
@@ -116,7 +125,7 @@ pageEncoding="UTF-8"%>
     .ad_list {
         width: 100%;
         height: 350px;
-           background: url(https://i.ibb.co/tBJGPD9/xbox.png), no-repeat, center, center; 
+        background: url(https://i.ibb.co/tBJGPD9/xbox.png) no-repeat center center/cover; 
         background-size: cover;
         line-height: 1.5rem;
         margin-bottom: 20px;
@@ -163,7 +172,7 @@ pageEncoding="UTF-8"%>
         justify-content: flex-start;
         margin: 30px 0 30px;
     }
-    .sns p, a {
+    .sns p, .sns a {
         margin-right: 10px;
     }
 
@@ -189,31 +198,45 @@ padding: 20px 0;
 }
 footer{
 margin-top : 50px;
+display: flex;
+width: 90%;
+margin: 0 auto;
 }
 
-footer>ul {
+footer .inner ul {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
-padding-bottom: 30px;
+justify-content: start;
+}
+
+footer .inner li {
+margin-right:30px;
+margin-bottom: 15px;
 }
 
 footer>ul>li {
 margin-left: 10px;
+margin-right: 30px;
+margin-bottom: 20px;
 }
 
 .bottomlink {
-display: flex;
-justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    justify-content: center;
 
 }
 .bottomlink>ul {
-margin-top: 20px;
-margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .bottomlink>ul>li {
-
 margin-bottom: 20px;
 }
 
@@ -222,29 +245,75 @@ font-weight: bold;
 margin-bottom: 20px;
 }
 
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+}
+
         /* top-down방식 : 아래로 내려가면서 바뀜 1200px->1024px->800px 이하로 줄어들 경우 배경을 바꾸어라 */
         /* bottom-up방식 : 모바일 화면을 먼저 완성 시킨 뒤 화면이 커지면서 배경이 바뀜 */
-        @media screen and (max-width:480px) {
-            .nav {
-                display: none;
-
-            }
-            .bottom {
-                flex-direction: column;
-                /* flex-wrap: wrap; */
-            }
-            
-        }
         @media screen and (max-width:720px) {
             .nav {
                 display: none;
 
             }
-            .bottom {
-                flex-wrap: wrap;
+            
+            
+            .bottomlink {
+                grid-template-columns: repeat(2, 1fr);
             }
+            
+            .main_card {
+            	grid-template-columns: repeat(2, 1fr);
+            }
+            
+             .ad_list .content p {
+            	display:none;
+            }
+            
+            .banner_card .content {
+            	width: 80%;
+            	padding:70px 0px 0px 30px;
+            }
+            
+            
 
         }
+       
+        @media screen and (max-width:480px) {
+            .nav {
+                display: none;
+
+            }
+            .bottomlink {
+                grid-template-columns: 1fr;
+            }
+            
+            .main_card {
+            	grid-template-columns: 1fr;
+            }
+            
+            .ad_list .content p {
+            	display:none;
+            }
+            
+            .banner_card .content {
+            	width: 80%;
+            	padding:50px 0px 0px 30px;
+            }
+            
+        }
+
 
 </style>
 </head>
@@ -393,9 +462,11 @@ margin-bottom: 20px;
     </div>
 
     <footer>
-
+    <div class="inner">
+        <div>
+            English (United States)
+        </div>
         <ul>
-            <li>English (United States)</li>
             <li><a href="#">Sitemap</a></li>
             <li><a href="#">Contact Microsoft</a></li>
             <li><a href="#">Privacy & cookies</a></li>
@@ -405,7 +476,7 @@ margin-bottom: 20px;
             <li><a href="#">About our ads</a></li>
             <li><a href="#">Microsoft 2020</a></li>
         </ul>
-
+	</div>
     </footer>
 </div>
 </body>
