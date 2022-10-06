@@ -45,6 +45,36 @@
             padding: 20px 0;
             font-size: 13px;
      }
+     .main-nav *{
+            padding: 0;
+        }
+        .main-nav{
+            width: 70%;
+            display: flex;
+           
+        }
+        .main-nav > img {
+            width: 120px;
+        }
+        .nav {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-left: 25px;
+            
+        }
+        .nav > li {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .nav > li > a {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+
 
 
         .header {
@@ -132,10 +162,20 @@
 
 <body>
 
-<<<<<<< HEAD
     <div class="container">
         <div class="menu">
-            
+            <div class="main-nav">
+                <img src="https://i.ibb.co/wwLhz98/logo.png" alt="">
+                <ul class="nav">
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Suface</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        
 
         </div>
         <div class="header">
