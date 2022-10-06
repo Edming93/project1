@@ -52,7 +52,7 @@ pageEncoding="UTF-8"%>
         padding: 20px 0;
         font-size: 13px;
  }
- .main-nav *{
+ 	.main-nav *{
         padding: 0;
     }
     .main-nav{
@@ -98,6 +98,7 @@ pageEncoding="UTF-8"%>
       justify-content: flex-end;
       padding-bottom: 50px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .main_card {
@@ -262,7 +263,7 @@ footer div {
 
         /* top-down방식 : 아래로 내려가면서 바뀜 1200px->1024px->800px 이하로 줄어들 경우 배경을 바꾸어라 */
         /* bottom-up방식 : 모바일 화면을 먼저 완성 시킨 뒤 화면이 커지면서 배경이 바뀜 */
-        @media screen and (max-width:720px) {
+        @media screen and (max-width:700px) {
             .nav {
                 display: none;
 
@@ -290,7 +291,7 @@ footer div {
 
         }
        
-        @media screen and (max-width:480px) {
+        @media screen and (max-width:500px) {
             .nav {
                 display: none;
 
