@@ -208,7 +208,7 @@
         <div class="banner_card">
             <div class="content">
 
-                <h2>어쩌구 컨텐트 저쩌구</h2>
+                <h2>어쩌구 컨텐트 저쩌구!</h2>
                 <p></p>
                 <a href="#" class="btn col"> a link</a>
             </div>
