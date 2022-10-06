@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1>기밍지 바보</h1>
 	<h1>Hello Spring MVC</h1>
 	<img src="image/icon-spring-framework.svg">
 	<a href="${pageContext.request.contextPath}/test1?data1=aaa">이동</a>
@@ -17,5 +18,6 @@
 		<input type="password" name="pw" id="pw">
 		<button>전송</button>
 	</form>
+	<h1>기밍지 바보</h1>
 </body>
 </html>
