@@ -172,6 +172,53 @@
             color: #262626;
             text-decoration: none;
         }
+        
+        ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.bottom {
+	background: #f2f2f2;
+	color: #616161;
+	font-size: 12px;
+	padding: 20px 0;
+}
+footer{
+	margin-top : 50px;
+}
+
+footer>ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+footer>ul>li {
+	margin-left: 10px;
+}
+
+.bottomlink {
+	display: flex;
+	justify-content: center;
+}
+.bottomlink>ul {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.bottomlink>ul>li {
+	
+	margin-bottom: 20px;
+}
+
+.bottomlink>ul>h3 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
     </style>
 </head>
 
@@ -260,10 +307,80 @@
 
     </div>
     
-    <footer>
+   <div class="bottom">
+		<div class="bottomlink">
+			<ul>
+				<h3>What's New</h3>
+				<li><a href="#">Surface Pro X</a></li>
+				<li><a href="#">Surface Laptop 3</a></li>
+				<li><a href="#">Surface Pro 7</a></li>
+				<li><a href="#">Windows 10 apps</a></li>
+				<li><a href="#">Office apps</a></li>
+			</ul>
 
+			<ul>
+				<h3>Microsoft Store</h3>
+				<li><a href="#">Account Profile</a></li>
+				<li><a href="#">Download Center</a></li>
+				<li><a href="#">Microsoft Store support</a></li>
+				<li><a href="#">Returns</a></li>
+				<li><a href="#">Older tracking</a></li>
+			</ul>
 
-    </footer>
+			<ul>
+				<h3>Education</h3>
+				<li><a href="#">Microsfot in education</a></li>
+				<li><a href="#">Office for students</a></li>
+				<li><a href="#">Office 365 for schools</a></li>
+				<li><a href="#">Deals for students</a></li>
+				<li><a href="#">Microsfot Azure</a></li>
+			</ul>
+
+			<ul>
+				<h3>Enterpris</h3>
+				<li><a href="#">Azure</a></li>
+				<li><a href="#">AppSource</a></li>
+				<li><a href="#">Automotive</a></li>
+				<li><a href="#">Government</a></li>
+				<li><a href="#">Healthcare</a></li>
+			</ul>
+
+			<ul>
+				<h3>Developer</h3>
+				<li><a href="#">Visual Studio</a></li>
+				<li><a href="#">Windowszs Dev Center</a></li>
+				<li><a href="#">Developer Network</a></li>
+				<li><a href="#">TechNet</a></li>
+				<li><a href="#">Microsoft Developer</a></li>
+			</ul>
+
+			<ul>
+				<h3>Company</h3>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">About Microsoft</a></li>
+				<li><a href="#">Company news</a></li>
+				<li><a href="#">Privacy at Microsoft</a></li>
+				<li><a href="#">Inverstors</a></li>
+			</ul>
+
+		</div>
+
+		<footer>
+
+			<ul>
+				<li>English (United States)</li>
+				<li><a href="#">Sitemap</a></li>
+				<li><a href="#">Contact Microsoft</a></li>
+				<li><a href="#">Privacy & cookies</a></li>
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="#">Trademarks</a></li>
+				<li><a href="#">Safety & eco</a></li>
+				<li><a href="#">About our ads</a></li>
+				<li><a href="#">Microsoft 2020</a></li>
+			</ul>
+
+		</footer>
+	</div>
 </body>
 
 </html>
